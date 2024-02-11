@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './my-first-copm.component.scss'
 })
 export class MyFirstCopmComponent {
+  name: string = '';
+  email: string = '';
+  message: string = '';
+  isSubmitted: boolean = false;
+  messages: Array<any> = [];
+
+  onSubmit(){
+    console.log(this.name)
+  }
 
 }
